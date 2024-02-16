@@ -11,6 +11,7 @@
   src: url(/assets/fonts/Vazirmatn-Bold.woff2) format(.woff2);
 }
 
-body {
+body,
+button {
   font-family: "vazir";
 }
