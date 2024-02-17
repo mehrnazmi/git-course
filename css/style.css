@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* Root */
@@ -18,6 +18,7 @@
   --font-color-body: #333333;
   --border-color: #fe4e00;
   --navbar-color: #f8f8f8;
+  --card-bcg-color:#FFF6F2;
 }
 html {
   font-size: 62.5%;
@@ -87,4 +88,75 @@ h3 {
   .btn--block {
     font-size: 2rem;
   }
+}
+/*BADGE*/
+.badge {
+  outline: 0;
+  border: 2px solid var(--border-color);
+  border-radius: 32px;
+  padding: 0.5rem 1.3rem;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: var(--white-color);
+  color: var(--border-color);
+  font-size: 1.2rem;
+}
+.badge--primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.4rem;
+  }
+}
+/*list*/
+.list {
+  list-style: none;
+  font-size: 1.8rem;
+}
+/* new-style */
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+/* .list--tick {
+  list-style-image: url("/assets/images/bxs-check-square.svg");
+  padding-right: 3rem;
+} */
+/* .list--tick .list__item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("/assets/images/Microsoft-Fluentui-Emoji-Flat-Check-Mark-Button-Flat.svg") no-repeat;
+  background-color: #ccc;
+  padding-right: 3rem;
+} */
+.list--tick .list__item {
+   background: url("/assets/images/Microsoft-Fluentui-Emoji-Flat-Check-Mark-Button-Flat.svg") no-repeat;
+  background-position:right center ;
+  padding: 4rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+@media screen and(min-width:1024px) {
+  .list--tick .list__item {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+}
+.reserve-plan{
+  display: grid;
+  width: 311px;
+  height: 620px;
+  background-color: var(--card-bcg-color);
+  margin: 2rem;
+  grid-template-rows: auto;
+}
+.plan-card {
+  background-color: var(--secondary-color-light);
+  color: var(--white-color);
 }
